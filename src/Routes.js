@@ -13,7 +13,7 @@ import AddCategory from './admin/AddCategory';
 
 import AddProduct from './admin/AddProduct';
 import ManageProducts from './admin/ManageProducts';
-import Orders from './admin/Orders';
+import ManageOrders from './admin/Orders';
 import UpdateOrder from './admin/UpdateProduct';
 import UpdateProduct from './admin/UpdateProduct';
 import ManageCategory from './admin/ManageCategories';
@@ -40,7 +40,7 @@ const Routes=()=>{
     <AdminRoute path="/admin/categories" exact component={ManageCategory}/>
     <AdminRoute path="/admin/create/product" exact component={AddProduct}/>
     <AdminRoute path="/admin/products" exact component={ManageProducts}/>
-	 <AdminRoute path="/admin/orders" exact component={Orders}/>
+	 <AdminRoute path="/admin/orders" exact component={ManageOrders}/>
     <AdminRoute path="/admin/category/:categoryId/:userId" exact component={deleteCategory}/>
 
     
