@@ -12,7 +12,7 @@ const ManageOrders =()=>{
     const {user,token} =isAuthenticated();
 
     const preLoad=()=>{
-        getAllOrders().then(data=>{
+        getAllOrders(user._id).then(data=>{
             if(data.error){
                 console.log(data.error)
             }
