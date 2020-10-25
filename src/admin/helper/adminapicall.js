@@ -148,7 +148,7 @@ export const createProduct = (userId, token, product) => {
   };
   
   //order all
-   export const getAllOrders = () => {
+   export const getAllOrders = (userId) => {
     return fetch(`${API}/order/all/${userId}`, {
       method: "GET"
     })
@@ -158,7 +158,7 @@ export const createProduct = (userId, token, product) => {
       .catch(error => console.log(error));
   };
   
-   export const getOrderStatus = () => {
+   export const getOrderStatus = (userId) => {
     return fetch(`${API}/order/status/${userId}`, {
       method: "GET"
     })
@@ -170,7 +170,7 @@ export const createProduct = (userId, token, product) => {
   
   
   
-   export const updateOrderStatus = (orderId,userId, token,) => {
+   export const updateOrderStatus = (orderId,userId, token,order) => {
     return fetch(`${API}/order/${orderId}/status/${userId}`, {
       method: "PUT",
       headers: {
@@ -178,7 +178,7 @@ export const createProduct = (userId, token, product) => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`
       },
-      body: JSON.stringify(category)
+      body: JSON.stringify(order)
     })
       .then(response => {
         return response.json();

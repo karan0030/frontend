@@ -60,4 +60,4 @@ const ManageOrders =()=>{
 
 }
 
- export default ManageProducts;
+ export default ManageOrders;

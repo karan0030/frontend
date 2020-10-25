@@ -114,7 +114,7 @@ const loadingMessage = () => {
          {errorMessage()}
         {SignInForm()}
         {redirect()}
-        <p className="text-center text-white">pp {JSON.stringify({values})}</p>
+       
         
         </Base>
 
