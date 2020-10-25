@@ -13,6 +13,8 @@ import AddCategory from './admin/AddCategory';
 
 import AddProduct from './admin/AddProduct';
 import ManageProducts from './admin/ManageProducts';
+import Orders from './admin/Orders';
+import UpdateOrder from './admin/UpdateProduct';
 import UpdateProduct from './admin/UpdateProduct';
 import ManageCategory from './admin/ManageCategories';
 import { deleteCategory } from './admin/helper/adminapicall';
@@ -38,11 +40,15 @@ const Routes=()=>{
     <AdminRoute path="/admin/categories" exact component={ManageCategory}/>
     <AdminRoute path="/admin/create/product" exact component={AddProduct}/>
     <AdminRoute path="/admin/products" exact component={ManageProducts}/>
+	 <AdminRoute path="/admin/orders" exact component={Orders}/>
     <AdminRoute path="/admin/category/:categoryId/:userId" exact component={deleteCategory}/>
 
     
     <AdminRoute path="/admin/product/update/:productId" exact component={UpdateProduct}/>
     <AdminRoute path="/admin/category/:categoryId" exact component={UpdateCategory}/>
+	
+	<AdminRoute path="/admin/order/update/:orderId" exact component={UpdateOrder}/>
+   
 
 
 
