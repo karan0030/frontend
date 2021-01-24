@@ -32,9 +32,9 @@ const Routes=()=>{
     <Route path="/" exact component={Home}/>
     <Route path="/signup" exact component={SignUp}/>
     <Route path="/signin" exact component={SignIn}/>
-//     <Route path="/cart" exact component={Cart}/>
+  <Route path="/cart" exact component={Cart}/>
     
-    <PrivateRoute path="/cart" exact component={Cart}/>  
+//     <PrivateRoute path="/user/cart" exact component={Cart}/>  
     <PrivateRoute path="/user/dashboard" exact component={UserDashBoard}/>
     <AdminRoute path="/admin/dashboard" exact component={AdminDashBoard}/>
     <AdminRoute path="/admin/create/category" exact component={AddCategory}/>
