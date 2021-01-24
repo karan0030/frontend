@@ -12,7 +12,7 @@ export default function Cart(){
     
     const [products, setProducts] = useState([])
     const [reload, setReload] = useState(false)
-    products=[]
+    
      useEffect(() => {
         setProducts(loadCart())
      }, [reload])
